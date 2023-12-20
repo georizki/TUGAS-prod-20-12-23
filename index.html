@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Vip = parseFloat(prompt("Masukan Total Tiket VIP"))
+        let Eks = parseFloat(prompt("Masukan Total Tiket Eksekutif"))
+        let Eko = parseFloat(prompt("Masukan Total Tiket Ekonomi"))
+
+        if(Vip >= 35){
+            KeuntunganVip = 25 * Vip
+        } else if(Vip >= 20 && Vip < 35){
+            KeuntunganVip = 15 * Vip
+       } else{
+        KeuntunganVip = 5 * Vip
+       }
+       
+       if(Eks >= 40){
+           KeuntunganEks = 20 * Eks
+        }else if(Eks >= 20 && Eks <40){
+            KeuntunganEks = 10 * Eks
+        }else{
+            KeuntunganEks = 2 * Eks
+        }
+        
+        if(Eko > 0){
+            KeuntunganEko = 7 * Eko
+        } else{5
+            KeuntunganEko= 0 * Eko
+        }
+        
+        let JumlahTiket = Vip + Eks + Eko
+        let TotalKeuntungan = KeuntunganVip + KeuntunganEks + KeuntunganEko  
+
+        console.log(`Keuntungan Dari Tiket Kelas Vip Adalah ${KeuntunganVip}%, Eksekutif Adalah ${KeuntunganEks}% dan Ekonomi Adalah ${KeuntunganEko}%`)
+        console.log(`Total Keuntungan Dari Tiket Setiap Kelas Adalah ${TotalKeuntungan}%`)
+        console.log(`Jumlah Tiket Perkelas Adalah Vip ${Vip}, Eksekutif ${Eks}, dan Ekonomi ${Eko}`)
+         console.log(`Total Jumlah Tiket Keseluruhan  Pada Setiap Kelas Adalah ${JumlahTiket}`)
+
+         document.write( `Keuntungan Dari Tiket Kelas Vip Adalah ${KeuntunganVip}%, Eksekutif Adalah ${KeuntunganEks}% dan Ekonomi Adalah ${KeuntunganEko}%`)
+        document.write(`<br>`)
+        document.write(`<br>`)
+         document.write(`Total Keuntungan Dari Tiket Setiap Kelas Adalah ${TotalKeuntungan}%`)
+         document.write(`<br>`)
+        document.write(`<br>`)
+         document.write(`Jumlah Tiket Perkelas Adalah Vip ${Vip}pcs, Eksekutif ${Eks}pcs , dan Ekonomi ${Eko}pcs55050`)
+         document.write(`<br>`)
+        document.write(`<br>`)
+         document.write(`Total Jumlah Tiket Keseluruhan  Pada Setiap Kelas Adalah ${JumlahTiket}`)
+    </script>
+</body> 
+</html>
